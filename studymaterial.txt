@@ -1,0 +1,558 @@
+1st class       ----------- 1st & 2nd parts
+ 
+what is software --
+set of programs to perform some task /
+collections of programs to perform some task
+
+testing -- testing the features of an application whether it is working or not as expected.
+
+verification -- testing by a tester
+validation -- testing by an end - user
+
+software applications - 2 types
+1. projects -- app developed based on client requirement -- service based company
+2. product - app developed based on market req by target some group of users -- product based
+
+software is nothing but an application
+is of 3 types
+1. system softwares - OS
+2. programming softwares - lines of code to be converted to machine understandable language
+	uses -- compliers, interpreters and debuggers
+3. application softwares -- 3 types
+	1. standalone application -- desktop based 
+	2. web based application -- apl uses browsers
+	3. mobile based application -- 2 types
+		1. mobile web based -- apl uses browsers in mobile
+		2. mobile native --- apps in android/ios
+
+software testing - it is one of the phase/stage in SDLC, is a process to do verification and validation of an application contains a set of programs to perform the task.
+
+an application needs to be developed based on the structure -- SDLC -- software development life cycle
+every step in sdlc - phase/stage
+in sdlc there are 3 types of methodologies
+1. old/legacy -- waterfall model
+2. new methodology - v model
+3. advanced methodology - Agile-- it has different methods -- populary used scrum methodology
+
+2nd class ---------------
+
+testing can be done 2 ways 
+1. Manual/functional testing
+	--> checking the functionality of an appliccation
+`	--> manual tools like jira, trello etc
+2. automated
+	--> selenium
+	--> core java
+	--> nrml java, project, maven, gradle
+	--> common scenarios
+	--> unit testing frameworks - junit, testng, cucumber
+	--> UI/API/DB testing
+	--> postman, rest assured
+	--> sql - mysql, nosql - mongodb
+	--> remote execution using docker, selenium grid
+	--> ci/cd tool - jenkins
+	--> git repository
+
+software testing -- it is a process to perform verification and validations of features or functionality of an application.
+
+every application need to be developed based on the process of SDLC
+SDLC - software development life cycle - it has 7 stages/phases
+1. requirement gathering -- collecting requirements from client - Business analyst/product owner/subject matter expert(sme)- here we came to know what to develop - o/p - BRS(Business requirement specification) document
+	requirements - features/ functionalities
+2. analysis -- how it is developed - system analyst - o/p - SRS(system requirement specification)
+3. design -- technical architect -- diagramatical representation - o/p -- HLD/LLD's/mockups/wireframes
+4. coding/development -- app -- UI/API/DB -- layers need to test -- package/build
+5. testing -- testers/QA/SDET'S/QE -- software testing/system testing -- QA sign off -- nothing but, tester checks all the functionalities of app  i.e., ready to deploye in to the market -- test artifacts -- documents relevant to test that functionality
+6. release -- production -- live server -- site reliability engineer(SRE)/devops -- user can access through browser
+7. maintenance -- if any issues replicated after the deployment in prod -- dev+qa+sre
+
+sdlc has 3 types of methodology or methods
+1. old/legacy -- testing has to be done only after development stage has finished up
+	1. waterfall 
+	2. prototype
+	3. spiral
+	4. incremental
+	5. RAD - rapid app development model
+2. new -- testing has done each and every stage of sdlc process
+	1. fish
+	2. v - model
+		1. v -incremental model
+		2. v- spiral model
+3. advanced -- testing has done each and every stage of sdlc process and also done acceptance(review) i.e, accepting new requirements from client even at middle of developing -- and also receive the feedback from client on completed development of application
+	--> agile -- it has different models - mostly used - scrum model
+
+26/08/2024 --- edited
+
+environments -- different servers -- remote machine -- code will be run on different env to test
+1. Dev -- tested by developer
+2. QA -- tester
+3. Stag/UAT/preprod -- for product - tester/ for project - client -- client representative or client stackholders
+4. PROD/live -- released into the market
+
+for live -- url will be --- https://domain name/
+for remaining like dev, QA and stag -- url contains the ip address of the machine -- https://189.23.9.235/dev or QA or stag
+
+deployment -- copying the code to the server
+
+In sdlc, for every stage testing will be performed.
+different types of testings are
+1. documentation testing  - requirement gathering(BRS)/analysis(SRS)/design(HLD OR LLD OR mockups or wireframes) ---BA/SA/TA
+2. unit testing - development - Developer -- build/package
+3. integration testing - development - developer -- build/package
+4. software/system testing - testing - tester/QA -- testing artifacts
+5. release testing - release - SRE/devops -- deployed to other server
+6. maintenance testing - maintenance - dev/qa/sre - build/testing artifacts/deployment
+
+if application needs to develop, a process to be followed - SDLC process -- in that testing is one of the stage/phase
+to perform testing needs to follow one more process -- STLC process
+STLC -- software testing life cycle -- it has different stages/phases
+1. test initiation/strategy -- how we are going to test the application
+	there are 3 types of strategies 
+	1. adhoc strategy -- unplanned testing
+	2. exhaustive strtaegy -- not used in real time app
+	3. optimal strategy -- testing will done based on the boundary conditions -- not to check every case -- identifying the optimal conditional to test functionality --- we are following optimal strategy in real time
+2. test planning
+	planning need to done based on different conditions
+	1. what to test -- what functionality
+	2. how to test -- manual/automate
+	3. when - date and time 
+	4. where - on which env
+	different types of testing
+		1. ui
+		2. api
+		3. compatability
+`		4. performance - load/stress etc
+		5. usability testing
+	5. who needs to test -- the person to perform that test 
+	6. rules of qa signoff -- if once qa gives signoff, it is ready i.e.,bug/defect-free to deploy on to other environment
+		main rule is if the defect is raised, but it is not much impacted to the end user-- then leave that defect
+3. test design -- preparing artifacts -- supportive documents
+	need to follow the hirearchy --->
+	test suite -- functionality name -- create an excel sheet --functionality_name.xlsx -- collection of test scenarios
+	test scenarios -- what functionality to test -- collection of test cases -- action to drive an event i.e., functionality
+	test cases -- identifying different conditions to test that functionality -- collection of test steps
+
+		In test cases, how different conditions need to be decided based on test techniques. there are 5 test techniques
+			1. BVA - boundary value analysis -- not only applied to digits, it will be used with texts and characters
+				if optimal strategy is selected, then need to find out test scenarios for the different test cases of checking all values at that BCA is selected
+				ex : - age valid from 18 to 100
+					for this the boundary values are defined as, lowerboundary-1,lowerboundary,lowerboundary+1,upperboundary-1,upperboundary,upperboundary+1
+					for the above age, the conditions need to check are
+					1.17 - error
+					2.18 - accept
+					3.19 - accept
+					4.99- accept
+					5.100- accept
+					6.101 - error
+		there is a difference between error and warning --- error - invalid credentials entered, warning -- left the fields as empty
+			2. ECP - equivalence class paritition
+				it will find out what are the valid and inavlid cases
+			3. DT - decision table -- to remove duplicate conditions
+			4. ST - state transitition --- it will change the stages while changing the condition
+			5. EG - error guessing --- it will come by expertise
+
+		there are two types of testcases will defined
+			1. Insprint / functional test cases
+			2. regression test cases
+
+	test steps --  perform verification and validation -- sequence of actions performed on application for test cases	
+4. test execution -- execute the test cases -- pass/fail/skip
+5. test reporting -- two types of report -- execution and defect report --- for defect report again there is a process - BLC/DLC -- bug/defect life cycle --- summary of execution
+6. test closure/qa signoff/qa approval --- if it has priority defects then qa won't signoff-- approval will be given when minor defects are present
+
+tools
+for every action, need to given an update to higher officials
+it is impossible at every action, for that purpose to monitor every action we have 3 types of tools
+1. project management tools -- sdlc, stlc, blc - jira
+2. test management tools -- stlc, blc -- testlink/qatest
+3. defect management tools - blc -- bugzilla/reportbug
+
+in environments
+for dev - higher env - qa
+for qa higher env - stg , lower env - dev
+for stg higher env - prod, lower env - qa
+for prod lower env - stg
+
+
+spiral model --- for every iteration -- a newerr version is released  -- iteration is called as phase
+phase by phase by developing it into multiple iterations model -- combination of iterative and incremental model
+
+waterfall - sequential
+prototype - by developing sample screens nothing but protypes -- in the only for requirements, analysis, design and coding of ui parts remaining will be reused
+RAD - by reusing the existing components of an application 
+incremental - dividing the application into multiple phases or modules to develop within a span 
+
+
+
+15th may ----------------------------------------------------------------------------------------------------
+
+severity --- how it is affecting the application
+priority -- blocking then end user usage -- to be fixed first --that has high priority
+
+defect/bug life cycle --to raise an defect, need to follow some procedure
+defect id
+defect summary
+steps to reproduce
+relevant/supportive screenshots
+on which environment
+on whst os
+on which browser -- google, ff, ie
+on which device
+assign to whom - developer
+severity 
+priority
+comments
+requirement id
+
+blc stages
+new --new defect raised by tester
+assign -- accepted as a defect by tester/ qa lead
+open - dev started analyzing the defect
+differed -- dev solve that defect in a later releases not imediately 
+rejected -- dev does not categorized a issue as a defect  or dev has not able to replicate it
+triage --dev need an additional information about defect
+fixed --- dev fixed/solved the defect
+reopen  -- if defect is not solved-- then the tester again raised a defect i.e., reopen stage
+closed -- retesting is passed
+done -- po/client stackholder/client representative -- gives the defect is solved i.e., done stage
+duplicate -- if the defect is already raised by an another tester
+
+build/package -- integration of ui/api/db 
+types of testing 
+smoke -- basic testing on a application when got new build from the dev or initial testing on application to accept the build 
+regular/insprint --- testing performed during in a sprint/increment by executing identified test cases
+retesting -- testing defect raised test cases
+regression --- testing existing functionalities --- at sprint closure level
+sanity -- executing the dependency test cases / in depth testing
+sanity suite -- subset or part of regression suite -- dependency, current, defect raised test cases called as sanity suite
+final regression/hardening phase testing --- also called as postmortem testing --- testing existing functionalities along with new requirements before release --at release time
+
+environment --- server's -- remote machine
+dev, qa, staging, uat -- optional --it is only done when client env is present in the project or product, production/live
+
+deployment -- copy the code/packages/build to the server --  dev to qa /qa to stg
+release - moving the code from staging to production
+--> accessing the remote machine/server through url
+release cycle -- time taken to do a release -- for every 1 month in interview if exp
+
+features/functionalities/requirements/user stories -- all are same
+
+ before release -- executes a set of testings -- called as regression/hardening phase testing
+
+agile -- testing and acceptance methodology -- incremental & iterative model
+2 types of board
+1. scrum board -- tester things
+2. kanban board -- if product owner raised the defects
+
+SLA - service level agreement -- within 48 hrs
+
+releases types ---
+1. regular -- planned activity
+2. patch / hotfix -- this should be done within 48 hrs --adhoc release
+
+
+test cases ---
+1. ui behaviour ---- +ve testing -- diret flow
+2. input domain testing -- checking all input conditions
+3. error handling testing -- checking all invalid alerts or message when done with invalid details
+4. manipulation testing -- internal calculations while testing 
+
+for what approaches to be used for testing -- above are
+
+for what techniques are be used for testing ---- bva, ecp, dt, st, eg
+
+
+there are 3 types of testing levels especially --
+1. ui -- testing of functionality on ui is  reflecting as expected or not
+2. api --- testing the services or methods which are running in the backend
+3. db --- whatever the data that shows on ui, is correctly getting from the database or present in the db or not
+
+documentation types of testing
+1. walkthrough --- to check the completeness and corrections of the document by setting up a meeting
+   3 types of actions --- remove, add content,update
+2. peer review --- by setting up a peer review meeting 
+   3 types of actions --- remove, add content,update
+3. inspection --- to check the completeness and corrections of the document by searching for a topic or relevant data
+
+unit testing -- smallest part of project 
+integration -- units all are combined as a single unit 
+
+To test code – completely and correctly
+Dev- coding – unit / integration testing---------------------
+
+basic path coverage --- testing positive scenario of the code
+control structure coverage -- testing switching of control or different paths of the code -- ex - if case is valid then executes one controlset, or invalid executes another set of actions
+programming technique coverage -- identified as a best programming technique based on 2 factors
+1. lines of code
+2. memory usage in code
+mutation coverage -- testing on testing  --- called as bebugging
+cc - cyclomatic complexity -- helps to identify the number of paths to be tested in a code
+
+
+software testing/system testing
+1. functional -- stlc process
+2. non-functional 
+
+in agile ------
+requirement -- user story
+group of requirements -- epic
+group of epics -- initiative
+
+software configuration management teams --- devops --- sre
+---24th may completed
+
+
+
+git commands
+two types of repo -- local repo and remote repo
+need to install git client -- 2 --gui and cli
+ls -- list of files and folders
+ls -a -------- list of files and folders along with hidden
+clone -- git clone url --- used to pull  the latest code from remote repo to local repo
+status
+add
+commit
+push
+pull
+restore
+log   ------------- log --oneline
+config
+------ username and mail
+branch -- checkout, git branch branchname
+default branches --- main/master
+
+
+26/10/2024
+------------------------------------------------------------------------------------------------
+java concepts ----
+
+jdk - java development kit -- used to devlop the application
+jre - java runtime environment -- used to run the application
+jvm - java virtual machine -- it is a memory location 
+jar file --- it is conversion of code to share or for deploy -- need to convert the code into jar file 
+
+hierarchy-
+
+project
+	package
+		class
+			properties
+			methods
+				lines of code
+naming convention 
+---------------
+project - lower case -- project1
+package- lower case -- pack1
+class  & constructor -- camel case -- starting letter of a word is capital  -- Sample1
+properties & methods -- pascal casing --- starting letter of the word is lowercase except that all other words starting letter has upper case -- addTwoNums
+constants - upper case -- ROI
+
+oops concept 
+-----------
+class -- it is collection of properties and methods / blueprint/prototype/gives an idea 
+object -- real entity exist in the real world which has behaviour
+
+if an method or property need to access in a class an object need to be created
+creation of an object --- class objname = new class();
+				objname.property;
+				objname.method();
+
+advantages of oops ---
+1. reusability
+2. reduce maintenance
+
+encapsulation -- binding some group of entities into a single entity
+ex -- class -- collection of properties and methods
+project is an example
+
+abstraction --- hiding of essential data -- it should be done in several ways
+1. access specifiers/modifiers
+2. abstract classes
+3. interfaces
+
+access specifiers ---- 4 types
+1. public -- can access anywhere in the project
+2. private -- can access within the same class
+3. protected -- can access within the same package and also in inherited class which is also present in another package
+4. default --- can access within the same package
+
+why all this ? -- to define the scope
+scope -- level of access
+
+where this all access specifiers is used -- before the properties and methods(members)
+
+method --- collection of lines of code to implement a specific task 
+syntax  -------- public void m1(int args1, int args2)
+{
+// lines of code
+}
+
+where 
+
+public void m1(int args) --- method definition / header
+{
+// lines of code
+} ---------------- method body/implementation/code
+
+public -- access specifier/ modifier
+void -- return type
+m1 -- method name
+args1, args2 --- arguments/parameters/load
+
+types of methods
+-------------
+1. user defined methods --- methods which are defined by user 
+2. predefined methods -- methods which are used from library
+3. concrete methods -- method with body/ implementation/code
+4. abstract methods --- method without body/implementation
+5. static methods -- which will have static keyword
+6. non-static methods --- methods which dosen't contain static keyword
+
+imp points 
+----------------------------
+abstract method cannot be a static method
+concrete class can have static or non-static methods
+	static - which has static keyword in method header and also has method body 
+		-- it can access through the class name but here using of static keyword, it automatically creates the memory in JVM
+	non-static - which has only method body without any keywords
+		-- it can access through the object creation because of that object it will create the memory for that object in JVM
+abstract class can have abstract methods and concrete methods
+	-- class has atleast one abstract method
+	-- method with body -- concrete methods of static or non-static
+		-- for static -- can access through classname
+		-- but for non-static, object cannot be created in abstract class --we can access by creating object to its inherited/implemented/extended class
+		-- abstract method -- can also access by creating object to its inherited/implemented/extended class
+
+interface 
+-- it can only have abstract methods
+-- collection of abstract methods
+
+errors -- of 2 types
+compile time errors
+	--syntax errors -- against the rules of code implementation
+run time errors
+	-- sematic errors -- statement doesn't have any meaning
+
+userdefined methods can be concrete/abstract/static
+
+inheritance 
+----------------------------------
+parent/superclass/base class
+child/extended class/derived class/subclass
+
+if A is one class, b is another class
+if b extends a, then b is child class and a is parent class 
+
+extends is a keyword to inherit the class
+
+inherting the members(properties/methods) from parent to the child
+inheriting from multiple entities 
+child -- parent 
+class -- class
+class -- interface
+interface -- interface
+interface -- class ----------- not possible in java
+
+types of inheritance
+--------------------------------
+single level
+multi level
+multiple
+hierarchal
+hybrid
+
+
+git commands -- 15th june
+-------------------------------
+defaultly 2 branches -- main/master
+
+Git is the underlying version control system.
+Git Client (e.g., Git CLI or GitHub Desktop) is used to access Git’s commands and manage repositories.
+Git Repository is the project’s storage, containing all files, history, and branches, with both local and remote versions for collaboration.
+
+git ls -- list of files/folders in a directory
+git ls -a -- list of files and folders in a directory along with the hidden files
+git status -- status of the files -- modified/deleted/untracked
+git add <filename> -- adding particular filename
+git add ./git add --all -- adding all files which are unstaged
+git commit -m "message" -- committing the changes -- ready to push the files
+git push -- pushing the file from local to remote
+git clone remoteurl  -- at the first time, copy the project files from remote to the local
+git remote add origin url --- adding the github url ready to push the files to remote from local
+git config --global user.email "email" -- need to change the authentication in git account
+git config -global user.name "name" -- need to change the authentication in git account
+git pull -- pulling the files which are changed in the remote to the local -- with all updates
+git log -- displays the all commit changes along with the snapshot with the token number of all information
+git log --oneline -- displays the change in oneline which are committed
+git diff pathoffile -- displays what are the changes done in the local repo of files
+git push origin master -- pushing the files to the master branch
+git branch -- list all the branches
+git checkout branchname -- change from one branch to mentioned branch
+git branch branchname -- creating new branch
+git push -u origin <branch-name> --Sets the upstream branch so you can push changes with just git push in the future.
+git config --list -- shows the all info about git account
+pull request -- to merge the code between branches into the main branch
+git branch -m oldbranchname newbranchname --- change current branch name to new name 
+git checkout -b branchname --- it will create new branch and it will switch to that new branch 
+git restore --staged pathofthe file --- resored from staged to the un-staged stage
+git reset last_commit_id -- remove/revert the latest commit done which is unexpectedly
+
+need to create any branch -- create the branch in remote and then pull it, it will reflected in to the local -- not from local 
+create the new branch from main/master branch not from other
+
+if we get rejected while pushing the code --- first pull the latest code and then pull it --it works from local -- not do..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
