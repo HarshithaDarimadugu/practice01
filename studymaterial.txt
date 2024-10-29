@@ -348,7 +348,7 @@ properties & methods -- pascal casing --- starting letter of the word is lowerca
 constants - upper case -- ROI
 
 oops concept 
------------
+-----------------------------------------------------------------------------------------------------------------------------
 class -- it is collection of properties and methods / blueprint/prototype/gives an idea 
 object -- real entity exist in the real world which has behaviour
 
@@ -361,11 +361,11 @@ advantages of oops ---
 1. reusability
 2. reduce maintenance
 
-encapsulation -- binding some group of entities into a single entity
+**encapsulation -- binding some group of entities into a single entity
 ex -- class -- collection of properties and methods
-project is an example
+project hierarchy is an example
 
-abstraction --- hiding of essential data -- it should be done in several ways
+**abstraction --- hiding of essential data -- it should be done in several ways
 1. access specifiers/modifiers
 2. abstract classes
 3. interfaces
@@ -435,7 +435,7 @@ run time errors
 
 userdefined methods can be concrete/abstract/static
 
-inheritance 
+**inheritance 
 ----------------------------------
 parent/superclass/base class
 child/extended class/derived class/subclass
@@ -448,18 +448,18 @@ extends is a keyword to inherit the class
 inherting the members(properties/methods) from parent to the child
 inheriting from multiple entities 
 child -- parent 
-class -- class
-class -- interface
-interface -- interface
+class -- class -- using extends keyword
+class -- interface -- using implements keyword
+interface -- interface -- using extends keyword
 interface -- class ----------- not possible in java
 
 types of inheritance
 --------------------------------
-single level
-multi level
-multiple
-hierarchal
-hybrid
+single level -- only one level of inheritance
+multi level -- more than one level of inheritance
+multiple -- inheriting the members from two classes into one class -- it cannot be possible but it can be done by using interfaces
+hierarchal --- inheriting the members from one class into multiple class 
+hybrid -- combination of hierarchal and multiple with interfaces  
 
 
 git commands -- 15th june
@@ -501,6 +501,56 @@ need to create any branch -- create the branch in remote and then pull it, it wi
 create the new branch from main/master branch not from other
 
 if we get rejected while pushing the code --- first pull the latest code and then pull it --it works from local -- not do..
+
+-------------------------------------------------------------------------------------------------------------------------------------
+18th june
+
+interface -- collection of abstract methods
+how to access methods -- by creating interface reference i.e., using implements keyword in its child class 
+example code
+------------------
+interface Animal {
+    void sound();
+}
+
+interface CanRun {
+    void run();
+}
+
+class Dog implements Animal, CanRun {
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+
+    public void run() {
+        System.out.println("Dog runs");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.sound();
+        dog.run();
+    }
+}
+
+polymorphism -- existing in different forms
+--------------
+2 types 
+compile time -- static -- method overloading
+run time -- dynamic -- method overriding 
+constructor overloading
+constructor overriding --- not possible
+
+method overloading --- methods having same name with different parameters/arguments/load
+method overriding --- methods having same name with same parameters/arguments/load -- method will override in parent into child
+
+constructor
+------------
+to create an object
+to set the default values during object creation
+how to call constructor --- using new keyword
 
 
 
