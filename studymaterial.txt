@@ -555,10 +555,36 @@ how to call constructor --- using new keyword
 
 
 --------------20th june
+selenium setup preequisities-----
+jdk
+ide
+browser -- chrome/ff/edge
+browser driver--.exe 
+selenium jar file
+
+Selenium components --20th june of 36.1 pdf
+---------------------------------
+Selenium IDE – record and play back
+	plugin for browsers
+Selenium WebDriver – jar file / library – selenium RC – remote control - <3 version
+Selenium grid -- running multiple scripts
+
 archetype -- predefined templates provided by maven to get project structure 
 group id -- clent name
 artifact id - project name
 when maven project is created -- defaultly pom.xml file is created -- Project object model 
+maven is a dependency management tool
+
+setting.xml
+it contains credentials to get connected to client repository
+where ? - .m2 – local repository
+
+repositories in maven
+local repo
+global repo
+intermediate or clinet repo
+
+
 
 
 
